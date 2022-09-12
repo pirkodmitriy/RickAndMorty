@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cN3-2C-C3I">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gilroy-ExtraBold.otf">
+            <string>Gilroy-ExtraBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Characters-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="CharactersViewController" customModule="Rick_And_Morty" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Characters" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KVP-hl-S4Y">
+                                <rect key="frame" x="30" y="74" width="284" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="lff-5u-ixx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Gilroy-ExtraBold" family="Gilroy" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rZ8-AC-aqf">
+                                <rect key="frame" x="344" y="74" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="9CD-sU-vmu"/>
+                                    <constraint firstAttribute="width" constant="50" id="ook-8F-ihR"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="LogoutIcon">
+                                    <backgroundConfiguration key="background"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="signOutButtonAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="ngM-Af-nId"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="WyV-In-bUg">
+                                <rect key="frame" x="0.0" y="139" width="414" height="674"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" name="MainColor"/>
+                        <constraints>
+                            <constraint firstItem="WyV-In-bUg" firstAttribute="top" secondItem="KVP-hl-S4Y" secondAttribute="bottom" constant="15" id="66N-2g-ZGj"/>
+                            <constraint firstItem="WyV-In-bUg" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="7A7-I1-m4x"/>
+                            <constraint firstItem="WyV-In-bUg" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Ahi-Uq-Gc8"/>
+                            <constraint firstItem="WyV-In-bUg" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="NI5-Op-HV7"/>
+                            <constraint firstItem="KVP-hl-S4Y" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="30" id="S2E-i2-y9w"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="rZ8-AC-aqf" secondAttribute="trailing" constant="20" id="X39-sh-fE3"/>
+                            <constraint firstItem="KVP-hl-S4Y" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="Xpp-gd-vES"/>
+                            <constraint firstItem="rZ8-AC-aqf" firstAttribute="centerY" secondItem="KVP-hl-S4Y" secondAttribute="centerY" id="c96-mF-jjs"/>
+                            <constraint firstItem="rZ8-AC-aqf" firstAttribute="leading" secondItem="KVP-hl-S4Y" secondAttribute="trailing" constant="30" id="eNW-HD-jpr"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Characters" image="CharactersIcon" selectedImage="CharactersSelectedIcon" id="nke-RX-q10"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-384.05797101449281" y="867.85714285714278"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="olJ-g2-PNV">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="cN3-2C-C3I" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="YZv-aq-aeg">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.21579310299999999" green="0.21172654630000001" blue="0.2158600688" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.21579310299999999" green="0.21172654630000001" blue="0.2158600688" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" name="AccentColor"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="viewControllers" id="x8b-mL-txJ"/>
+                        <segue destination="Tix-iC-YGa" kind="relationship" relationship="viewControllers" id="cuk-NI-X2z"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n23-AW-JDD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="178" y="138"/>
+        </scene>
+        <!--Favorites-->
+        <scene sceneID="V3K-GK-QeO">
+            <objects>
+                <viewController id="Tix-iC-YGa" customClass="FavoritesViewController" customModule="Rick_And_Morty" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="y6n-fe-Q7W">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Favorites" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hPD-PQ-BMr">
+                                <rect key="frame" x="30" y="74" width="284" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="FRn-pH-O5g"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Gilroy-ExtraBold" family="Gilroy" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pPt-au-p9Q">
+                                <rect key="frame" x="344" y="74" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="efv-bh-YtA"/>
+                                    <constraint firstAttribute="height" constant="50" id="qrK-9m-zEn"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="LogoutIcon">
+                                    <backgroundConfiguration key="background"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="signOutButtonAction:" destination="Tix-iC-YGa" eventType="touchUpInside" id="ETl-d7-7p7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="FxD-uI-dWe"/>
+                        <color key="backgroundColor" name="MainColor"/>
+                        <constraints>
+                            <constraint firstItem="hPD-PQ-BMr" firstAttribute="leading" secondItem="FxD-uI-dWe" secondAttribute="leading" constant="30" id="5mY-MR-bgv"/>
+                            <constraint firstItem="hPD-PQ-BMr" firstAttribute="top" secondItem="FxD-uI-dWe" secondAttribute="top" constant="30" id="VHH-ov-NsH"/>
+                            <constraint firstItem="pPt-au-p9Q" firstAttribute="leading" secondItem="hPD-PQ-BMr" secondAttribute="trailing" constant="30" id="eoN-KU-fli"/>
+                            <constraint firstItem="pPt-au-p9Q" firstAttribute="centerY" secondItem="hPD-PQ-BMr" secondAttribute="centerY" id="f3F-m8-csl"/>
+                            <constraint firstItem="FxD-uI-dWe" firstAttribute="trailing" secondItem="pPt-au-p9Q" secondAttribute="trailing" constant="20" id="lRy-aV-ei9"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Favorites" image="FavoritesIcon" selectedImage="FavoritesSelectedIcon" id="rsQ-Sj-bpH"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RwA-Gp-OAk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="741" y="868"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="CharactersIcon" width="21" height="22"/>
+        <image name="CharactersSelectedIcon" width="19" height="20"/>
+        <image name="FavoritesIcon" width="22" height="20"/>
+        <image name="FavoritesSelectedIcon" width="22" height="20"/>
+        <image name="LogoutIcon" width="16" height="16"/>
+        <namedColor name="AccentColor">
+            <color red="0.67199999094009399" green="0.49700000882148743" blue="0.95099997520446777" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="MainColor">
+            <color red="0.14100000262260437" green="0.13699999451637268" blue="0.14599999785423279" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

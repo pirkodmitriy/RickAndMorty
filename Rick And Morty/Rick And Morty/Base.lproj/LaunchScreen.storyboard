@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchScreen" translatesAutoresizingMaskIntoConstraints="NO" id="t6X-K3-9Aa">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="856"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="Hqd-j6-gfn">
+                                <rect key="frame" x="52" y="342" width="310.5" height="122.5"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" name="MainColor"/>
+                        <constraints>
+                            <constraint firstItem="t6X-K3-9Aa" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="AY6-Dw-EQq"/>
+                            <constraint firstItem="Hqd-j6-gfn" firstAttribute="width" secondItem="t6X-K3-9Aa" secondAttribute="width" multiplier="0.75" id="Ae3-ad-oDg"/>
+                            <constraint firstItem="t6X-K3-9Aa" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Bja-Ro-qcb"/>
+                            <constraint firstItem="t6X-K3-9Aa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Iau-Su-4xo"/>
+                            <constraint firstItem="Hqd-j6-gfn" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" multiplier="0.9" id="Jsk-XQ-u3n"/>
+                            <constraint firstItem="Hqd-j6-gfn" firstAttribute="height" secondItem="t6X-K3-9Aa" secondAttribute="height" multiplier="0.142857" id="fDD-xk-ci3"/>
+                            <constraint firstAttribute="bottom" secondItem="t6X-K3-9Aa" secondAttribute="bottom" constant="40" id="gs4-TH-2WI"/>
+                            <constraint firstItem="Hqd-j6-gfn" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="kV1-iv-Fe5"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="LaunchScreen" width="1080" height="2130"/>
+        <image name="Logo" width="840" height="300"/>
+        <namedColor name="MainColor">
+            <color red="0.14138767120000001" green="0.13715869189999999" blue="0.14550223949999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
